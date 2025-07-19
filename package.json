@@ -1,0 +1,38 @@
+{
+  "name": "cleancode-videocast",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "TZ=UTC next dev --turbopack",
+    "build": "next build --turbopack",
+    "check-all": "pnpm ts && pnpm lint && pnpm test",
+    "ts": "tsc --pretty --noEmit",
+    "lint": "eslint .",
+    "test": "TZ=UTC vitest run",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/node": "^14.14.41",
+    "@types/react": "^19.0.8",
+    "eslint": "^9.30.1",
+    "eslint-plugin-prettier": "^5.5.1",
+    "prettier": "^3.2.4",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.35.1",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.1.1",
+    "@mui/material": "^7.1.1",
+    "@mui/material-nextjs": "^7.1.1",
+    "@tanstack/react-query": "^5.17.19",
+    "next": "^15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
